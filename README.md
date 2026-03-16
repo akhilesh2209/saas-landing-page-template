@@ -74,7 +74,7 @@ styles/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/saas-landing-page-template.git
+git clone https://github.com/akhilesh2209/saas-landing-page-template.git
 ```
 
 Install dependencies:
