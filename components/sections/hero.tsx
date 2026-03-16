@@ -107,17 +107,25 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 transition-all duration-300 hover:shadow-[0_0_20px_var(--glow-primary)]">
-                Get Started Free <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <Button
+  onClick={() =>
+    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 transition-all duration-300 hover:shadow-[0_0_20px_var(--glow-primary)]"
+>
+  Get Started Free <ArrowRight className="ml-2 w-5 h-5" />
+</Button>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
-                variant="outline"
-                className="text-lg px-8 py-6 border-primary/30 hover:bg-primary/5"
-              >
-                Watch Demo
-              </Button>
+  variant="outline"
+  onClick={() =>
+    document.getElementById("dashboard")?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="text-lg px-8 py-6 border-primary/30 hover:bg-primary/5"
+>
+  Watch Demo
+</Button>
             </motion.div>
           </motion.div>
 

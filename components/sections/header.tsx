@@ -77,9 +77,14 @@ export function Header() {
               </motion.button>
             )}
 
-            <Button className="hidden sm:inline-flex bg-primary hover:bg-primary/90 transition-all duration-300 hover:shadow-[0_0_20px_var(--glow-primary)]">
-              Get Started
-            </Button>
+            <Button
+  onClick={() =>
+    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 transition-all duration-300 hover:shadow-[0_0_20px_var(--glow-primary)]"
+>
+  Get Started
+</Button>
 
             {/* Mobile Menu Button */}
             <motion.button
