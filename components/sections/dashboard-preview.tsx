@@ -66,7 +66,7 @@ export function DashboardPreview() {
           <motion.div
             animate={{ y: [-10, 10, -10] }}
             transition={{ duration: 4, repeat: Infinity }}
-            className="backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-white/20 dark:border-white/20 rounded-3xl p-8 shadow-2xl overflow-hidden"
+            className="backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-primary/20 rounded-3xl p-8 shadow-[0_20px_80px_rgba(0,0,0,0.35)] overflow-hidden"
           >
             {/* Dashboard header */}
             <div className="mb-8">
@@ -81,22 +81,22 @@ export function DashboardPreview() {
 
               {/* Stats grid */}
               <div className="grid grid-cols-4 gap-4">
-                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20">
+                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20 hover:scale-[1.03] transition-transform">
                   <p className="text-xs text-muted-foreground mb-1">Revenue</p>
                   <p className="text-2xl font-bold">$45.2K</p>
                   <p className="text-xs text-green-500 mt-1">+12.5%</p>
                 </div>
-                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20">
+                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20 hover:scale-[1.03] transition-transform">
                   <p className="text-xs text-muted-foreground mb-1">Users</p>
                   <p className="text-2xl font-bold">1,234</p>
                   <p className="text-xs text-green-500 mt-1">+8.2%</p>
                 </div>
-                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20">
+                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20 hover:scale-[1.03] transition-transform">
                   <p className="text-xs text-muted-foreground mb-1">Growth</p>
                   <p className="text-2xl font-bold">23.5%</p>
                   <p className="text-xs text-green-500 mt-1">+4.1%</p>
                 </div>
-                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20">
+                <div className="backdrop-blur-md bg-white/30 dark:bg-white/10 rounded-xl p-4 border border-white/20 hover:scale-[1.03] transition-transform">
                   <p className="text-xs text-muted-foreground mb-1">Conversion</p>
                   <p className="text-2xl font-bold">3.8%</p>
                   <p className="text-xs text-green-500 mt-1">+0.9%</p>

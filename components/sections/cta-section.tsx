@@ -43,13 +43,13 @@ export function CTASection() {
               </span>
             </motion.div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
               Start your free trial <GradientText as="span">today</GradientText>
             </h2>
 
             <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-12">
-              Join thousands of teams that are already using our platform to build, 
-              launch, and scale their products faster.
+              Join thousands of teams already building, launching, and scaling 
+their products faster with our platform.
             </p>
 
             <motion.div
@@ -60,7 +60,7 @@ export function CTASection() {
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 transition-all duration-300 hover:shadow-[0_0_20px_var(--glow-primary)]">
+                <Button className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 transition-all duration-300 hover:shadow-[0_0_30px_var(--glow-primary)]">
                   Start Free Trial <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </motion.div>

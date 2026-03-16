@@ -31,7 +31,7 @@ export function Hero() {
   ]
 
   return (
-    <section className="relative overflow-hidden pt-32 pb-24 md:pt-48 md:pb-32">
+    <section className="relative overflow-hidden pt-32 pb-28 md:pt-48 md:pb-36">
       {/* Animated gradient background */}
       <div className="absolute inset-0 -z-10">
         <motion.div
@@ -77,7 +77,7 @@ export function Hero() {
           variants={containerVariants}
           initial="initial"
           animate="animate"
-          className="text-center"
+          className="text-center max-w-4xl mx-auto"
         >
           {/* Badge */}
           <motion.div
@@ -92,10 +92,10 @@ export function Hero() {
 
           {/* Headline */}
           <motion.div variants={itemVariants} className="mb-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-4">
               The Future of <GradientText as="span">SaaS</GradientText>
             </h1>
-            <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Build, launch, and scale your product with our premium platform. 
               Trusted by thousands of teams worldwide.
             </p>
@@ -133,19 +133,40 @@ export function Hero() {
             >
               <div className="aspect-video bg-gradient-to-br from-primary/10 via-accent/10 to-transparent flex items-center justify-center relative overflow-hidden">
                 {/* Dashboard mockup */}
-                <div className="w-full h-full relative">
-                  <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                  <div className="absolute top-4 left-4 right-4 h-8 bg-primary/20 rounded-lg" />
-                  <div className="absolute top-16 left-4 right-4 space-y-3">
-                    {[1, 2, 3].map((i) => (
-                      <div
-                        key={i}
-                        className="h-3 bg-primary/15 rounded-full"
-                        style={{ width: `${100 - i * 15}%` }}
-                      />
-                    ))}
-                  </div>
-                </div>
+                <div className="w-full h-full p-6 flex flex-col gap-4">
+
+  {/* top navbar */}
+  <div className="h-8 bg-primary/20 rounded-lg w-full" />
+
+  {/* stat cards */}
+  <div className="grid grid-cols-3 gap-4 mt-2">
+    <div className="bg-primary/10 rounded-lg p-3">
+      <p className="text-xs text-muted-foreground">Revenue</p>
+      <p className="text-sm font-bold">$45K</p>
+    </div>
+
+    <div className="bg-primary/10 rounded-lg p-3">
+      <p className="text-xs text-muted-foreground">Users</p>
+      <p className="text-sm font-bold">1,234</p>
+    </div>
+
+    <div className="bg-primary/10 rounded-lg p-3">
+      <p className="text-xs text-muted-foreground">Growth</p>
+      <p className="text-sm font-bold">+23%</p>
+    </div>
+  </div>
+
+  {/* fake chart */}
+  <div className="flex items-end justify-center gap-2 h-24 mt-4">
+    <div className="bg-primary/40 w-4 h-10 rounded" />
+    <div className="bg-primary/40 w-4 h-16 rounded" />
+    <div className="bg-primary/40 w-4 h-12 rounded" />
+    <div className="bg-primary/40 w-4 h-20 rounded" />
+    <div className="bg-primary/40 w-4 h-14 rounded" />
+    <div className="bg-primary/40 w-4 h-24 rounded" />
+  </div>
+
+</div>
 
                 {/* Floating accent elements */}
                 <motion.div
